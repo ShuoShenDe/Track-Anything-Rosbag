@@ -8,9 +8,9 @@ debug_images/
 *.png
 *.zip
 *.jpg
-*.npy
 images/
 test_sample/
 result/
 vots/
 vots.py
+out/
