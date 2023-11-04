@@ -20,6 +20,7 @@ try:
     from mmcv.cnn import ConvModule
 except:
     os.system("mim install mmcv")
+import numpy as np
 
 # download checkpoints
 def download_checkpoint(url, folder, filename):
@@ -228,6 +229,8 @@ def show_mask(video_state, interactive_state, mask_dropdown):
     operation_log = [("",""), ("Select {} for tracking or inpainting".format(mask_dropdown),"Normal")]
     return select_frame, operation_log
 
+def save_data(data, filename):
+    np.save(filename, data)
 # tracking vos
 def vos_tracking_video(video_state, interactive_state, mask_dropdown):
     operation_log = [("",""), ("Track the selected masks, and then you can select the masks for inpainting.","Normal")]
@@ -255,8 +258,22 @@ def vos_tracking_video(video_state, interactive_state, mask_dropdown):
         template_mask[0][0]=1
         operation_log = [("Error! Please add at least one mask to track by clicking the left image.","Error"), ("","")]
         # return video_output, video_state, interactive_state, operation_error
+    # print("template_mask: ", (template_mask), len(template_mask[0]))  # 540 960  
+    row_num = 0
+    # for row in template_mask:
+    #     if any(item != 0 for item in row):
+    #         print(set(row))
+    #         print("row num", row_num)
+    #     row_num+=1
+    save_data(template_mask, "frame1_mask.npy")
+    print(type(template_mask))
+    print(type(following_frames))
+    print(type(following_frames[0]))
+
+    # print("following_frames: ",len(following_frames), len(following_frames[0]), len(following_frames[0][0]), len(following_frames[0][0][0]))  # 201 rest frame number 540, 960, 3
     masks, logits, painted_images = model.generator(images=following_frames, template_mask=template_mask)
     # clear GPU memory
+    print(len(masks), len(masks[0]), len(masks[0][0]))
     model.xmem.clear_memory()
 
     if interactive_state["track_end_number"]: 
@@ -378,7 +395,7 @@ SAM_checkpoint = download_checkpoint(sam_checkpoint_url, folder, sam_checkpoint)
 xmem_checkpoint = download_checkpoint(xmem_checkpoint_url, folder, xmem_checkpoint)
 e2fgvi_checkpoint = download_checkpoint_from_google_drive(e2fgvi_checkpoint_id, folder, e2fgvi_checkpoint)
 args.port = 12212
-args.device = "cuda:3"
+args.device = "cuda:0"
 # args.mask_save = True
 
 # initialize sam, xmem, e2fgvi models
@@ -428,8 +445,8 @@ with gr.Blocks() as iface:
 
         # for user video input
         with gr.Column():
-            with gr.Row(scale=0.4):
-                video_input = gr.Video(autosize=True)
+            with gr.Row():
+                video_input = gr.Video()
                 with gr.Column():
                     video_info = gr.Textbox(label="Video Info")
                     resize_info = gr.Textbox(value="If you want to use the inpaint function, it is best to git clone the repo and use a machine with more VRAM locally. \
@@ -454,16 +471,16 @@ with gr.Blocks() as iface:
                                 interactive=True,
                                 visible=False)
                             remove_mask_button = gr.Button(value="Remove mask", interactive=True, visible=False) 
-                            clear_button_click = gr.Button(value="Clear clicks", interactive=True, visible=False).style(height=160)
+                            clear_button_click = gr.Button(value="Clear clicks", interactive=True, visible=False)
                             Add_mask_button = gr.Button(value="Add mask", interactive=True, visible=False)
-                    template_frame = gr.Image(type="pil",interactive=True, elem_id="template_frame", visible=False).style(height=360)
+                    template_frame = gr.Image(type="pil",interactive=True, elem_id="template_frame", visible=False)
                     image_selection_slider = gr.Slider(minimum=1, maximum=100, step=1, value=1, label="Track start frame", visible=False)
                     track_pause_number_slider = gr.Slider(minimum=1, maximum=100, step=1, value=1, label="Track end frame", visible=False)
             
                 with gr.Column():
                     run_status = gr.HighlightedText(value=[("Text","Error"),("to be","Label 2"),("highlighted","Label 3")], visible=False)
                     mask_dropdown = gr.Dropdown(multiselect=True, value=[], label="Mask selection", info=".", visible=False)
-                    video_output = gr.Video(autosize=True, visible=False).style(height=360)
+                    video_output = gr.Video(visible=False)
                     with gr.Row():
                         tracking_video_predict_button = gr.Button(value="Tracking", visible=False)
                         inpaint_video_predict_button = gr.Button(value="Inpainting", visible=False)
@@ -597,6 +614,6 @@ with gr.Blocks() as iface:
         outputs=[video_input],
         # cache_examples=True,
     ) 
-iface.queue(concurrency_count=1)
-iface.launch(debug=True, enable_queue=True, server_port=args.port, server_name="0.0.0.0")
+iface.queue()
+iface.launch(debug=True, server_port=args.port, server_name="0.0.0.0", max_threads=5)
 # iface.launch(debug=True, enable_queue=True)

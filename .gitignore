@@ -3,8 +3,10 @@ __pycache__/
 docs/
 *.pth
 *.mp4
+*.bag
 debug_images/
 *.png
+*.zip
 *.jpg
 *.npy
 images/
