@@ -71,10 +71,10 @@ https://user-images.githubusercontent.com/28050374/232959816-07f2826f-d267-4dda-
 # Clone the repository:
 git clone https://github.com/gaomingqi/Track-Anything.git
 cd Track-Anything
-
+source trackanythingenv/bin/activate
 # Install dependencies: 
 pip install -r requirements.txt
-
+pip install 
 # Run the Track-Anything gradio demo.
 python app.py --device cuda:0
 # python app.py --device cuda:0 --sam_model_type vit_b # for lower memory usage
@@ -97,3 +97,33 @@ If you find this work useful for your research or applications, please cite usin
 ## :clap: Acknowledgements
 
 The project is based on [Segment Anything](https://github.com/facebookresearch/segment-anything), [XMem](https://github.com/hkchengrex/XMem), and [E2FGVI](https://github.com/MCG-NKU/E2FGVI). Thanks for the authors for their efforts.
+
+# Run
+
+## From python virtual environment
+```
+source /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/bin/activate
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0 --topic "CAM_FRONT" --frame_end_id 10
+
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0 --mask test_sample/frame1_mask.npy --topic "CAM_FRONT" --frame_end_id 10 --mask_save_path "./masks_result.npy"
+
+```
+
+```
+sudo docker build -t tracking_anything_rosbag . > build.log 2>&1
+sudo docker run tracking_anything_rosbag --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0
+
+sudo docker run \
+    --gpus all \
+    -it \
+    -v /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/:/workspace/shared_data \
+    tracking_anything_rosbag \
+    --path "/workspace/shared_data/Compass_2D_demo_allTopic_with_sam.bag" \
+    --frame_start_id 0\
+    --frame_end_id 10\
+    --mask "/workspace/shared_data/frame1_mask.npy"\
+    --mask_save_path "/workspace/shared_data/masks_result.npy"
+
+
+```
