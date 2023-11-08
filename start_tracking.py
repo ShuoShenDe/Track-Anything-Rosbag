@@ -27,7 +27,7 @@ def save_data(filename, data):
     np.save(filename, data)
     print("Save data to {}".format(filename))
     
-def get_reshape_size(org_x,org_y, ratio=0.5):
+def get_reshape_size(org_x,org_y, ratio=1):
     reshape_x = int(org_x *ratio)
     reshape_y = int(org_y*ratio)
     return reshape_x, reshape_y
@@ -59,9 +59,10 @@ def image_process(bag_path,  img_topic,  frame_start_id=0, frame_end_id=None):
                 images.append(image_list)
                 # print(len(image_list), len(image_list[0]), len(image_list[0][0]))
                 # cv2.imwrite("out/{:03d}.jpg".format(count), new_cv_image)
-                count+=1
+                
             if count >= frame_end_id:
                 break
+            count+=1
     return images
 
 def download_checkpoint(url, folder, filename):
@@ -98,7 +99,8 @@ def start_tracking(source_name, img_topic, mask,  template_mask, frame_start_id=
         raise Exception(operation_log)
     following_frames = image_process(source_name, img_topic = img_topic,  frame_start_id = frame_start_id, frame_end_id=frame_end_id)
     for i in tqdm(range(len(following_frames)), desc="Tracking image"):
-        if i ==0:           
+        if i ==0: 
+            print(following_frames[i].shape, template_mask.shape)
             mask, logit, painted_image = xmem.track(following_frames[i], template_mask)
             masks.append(mask)
             logits.append(logit)
@@ -112,20 +114,28 @@ def start_tracking(source_name, img_topic, mask,  template_mask, frame_start_id=
     # print("painted_images: ",len(painted_images), len(painted_images[0]), len(painted_images[0][0]), len(painted_images[0][0][0]))
     return masks, logits, painted_images
 
+def print_uniq_value(mat):
+    row_num=0
+    for row in mat:
+        if any(item != 0 for item in row):
+           print(row_num, set(row))
+           row_num+=1
+
 
 if __name__ == "__main__" :
     parser = argparse.ArgumentParser(description="Start tracking with specified bagpath and frameid.")
     parser.add_argument("--path", type=str, required=True, help="Path to the bag file.")  # "/home/qing/Documents/ShuoShen/Track-Anything/test_sample/Compass_2D_demo_allTopic_with_sam.bag"
     parser.add_argument("--frame_start_id", type=int, required=True, help="Frame ID for tracking.")
     parser.add_argument("--mask", type=str, required=False, help="Path to the mask file.")
-    parser.add_argument("--topic", type=str, required=False, default="CAM_FRONT", help="Image topic for tracking.")
-    parser.add_argument("--frame_end_id", type=str, required=False, default=None, help="Frame End ID for tracking.")
+    parser.add_argument("--topic", type=str, required=False, default="/tri_52", help="Image topic for tracking.")
+    parser.add_argument("--frame_end_id", type=str, required=False, default=10, help="Frame End ID for tracking.")
     parser.add_argument("--mask_save_path", type=str, required=False, default="./masks_result.npy", help="mask_save_path")
     # Parse the arguments
     args = parser.parse_args()
-    
+
     if not args.mask:
-        template_mask = load_data("test_sample/frame1_mask.npy")
+        template_mask = load_data("cv_mat.npy")
+        template_mask[template_mask == 100] = 79
     else:
         template_mask = load_data(args.mask)
         
@@ -138,15 +148,11 @@ if __name__ == "__main__" :
         args.frame_end_id = None
         print("frame_end_id {} is not a number, set to None".format(args.frame_end_id))
     
-    masks, logits, painted_images = start_tracking(args.path,  args.topic, template_mask, frame_start_id = args.frame_start_id, frame_end_id=args.frame_end_id)
+    masks, logits, painted_images = start_tracking(args.path,  args.topic, template_mask, template_mask, frame_start_id = args.frame_start_id, frame_end_id=args.frame_end_id)
     if args.mask_save_path.endswith(".npy"):       
         save_data(args.mask_save_path, template_mask)
     else:
         raise Exception("mask_save_path need end with .npy")
     
-    # row_num = 0
-    # print(len(masks), masks[0].shape)
-    # for row in masks[3]:
-    #     if any(item != 0 for item in row):
-    #         print(set(row))
-    #     row_num+=1
+    row_num = 0
+    print(len(masks), masks[0].shape)

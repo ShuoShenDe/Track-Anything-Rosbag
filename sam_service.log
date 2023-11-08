@@ -1,0 +1,2809 @@
+nohup: ignoring input
+ * Serving Flask app 'sam_service'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.182:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-228-913
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:17:27
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:05,  1.56it/s]Tracking image:  20%|██        | 2/10 [00:01<00:04,  1.82it/s]Tracking image:  30%|███       | 3/10 [00:01<00:03,  2.07it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.22it/s]Tracking image:  50%|█████     | 5/10 [00:02<00:02,  2.32it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.22it/s]Tracking image:  70%|███████   | 7/10 [00:03<00:01,  2.21it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.21it/s]Tracking image:  90%|█████████ | 9/10 [00:04<00:00,  2.21it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.20it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.16it/s]
+10.0.0.85 - - [07/Nov/2023 13:17:35] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:17:35
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735004_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735072_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735129_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735183_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735238_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735293_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735347_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735406_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735462_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131735517_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:17:39
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:02,  3.61it/s]Tracking image:  20%|██        | 2/10 [00:00<00:02,  2.86it/s]Tracking image:  30%|███       | 3/10 [00:01<00:02,  2.66it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.60it/s]Tracking image:  50%|█████     | 5/10 [00:01<00:01,  2.56it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.38it/s]Tracking image:  70%|███████   | 7/10 [00:02<00:01,  2.32it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.29it/s]Tracking image:  90%|█████████ | 9/10 [00:03<00:00,  2.26it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.40it/s]
+10.0.0.85 - - [07/Nov/2023 13:17:46] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:17:45
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745676_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745736_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745790_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745844_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745901_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131745955_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131746008_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131746066_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131746121_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131746174_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 22
+start tracking time is: 2023-11-07 13:17:58
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:18:00] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:18:00
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 22
+start tracking time is: 2023-11-07 13:18:27
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:18:29] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:18:29
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:19:30
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:03,  2.84it/s]Tracking image:  20%|██        | 2/10 [00:00<00:03,  2.61it/s]Tracking image:  30%|███       | 3/10 [00:01<00:02,  2.55it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.52it/s]Tracking image:  50%|█████     | 5/10 [00:01<00:02,  2.50it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.34it/s]Tracking image:  70%|███████   | 7/10 [00:02<00:01,  2.29it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.26it/s]Tracking image:  90%|█████████ | 9/10 [00:03<00:00,  2.25it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.35it/s]
+10.0.0.85 - - [07/Nov/2023 13:19:37] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:19:37
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937117_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937193_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937250_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937307_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937366_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937423_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937479_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937537_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937593_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107131937650_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 22
+start tracking time is: 2023-11-07 13:20:18
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:20:20] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:20:20
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:20:51
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:03,  2.84it/s]Tracking image:  20%|██        | 2/10 [00:00<00:03,  2.62it/s]Tracking image:  30%|███       | 3/10 [00:01<00:02,  2.55it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.52it/s]Tracking image:  50%|█████     | 5/10 [00:01<00:01,  2.51it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.33it/s]Tracking image:  70%|███████   | 7/10 [00:02<00:01,  2.29it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.27it/s]Tracking image:  90%|█████████ | 9/10 [00:03<00:00,  2.25it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.35it/s]
+10.0.0.85 - - [07/Nov/2023 13:20:58] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:20:57
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057567_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057623_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057679_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057735_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057793_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057850_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057906_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132057966_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132058021_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132058082_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 22
+start tracking time is: 2023-11-07 13:21:34
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:21:37] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:21:37
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:22:46
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:03,  2.76it/s]Tracking image:  20%|██        | 2/10 [00:00<00:03,  2.61it/s]Tracking image:  30%|███       | 3/10 [00:01<00:02,  2.55it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.53it/s]Tracking image:  50%|█████     | 5/10 [00:01<00:01,  2.51it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.34it/s]Tracking image:  70%|███████   | 7/10 [00:02<00:01,  2.30it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.27it/s]Tracking image:  90%|█████████ | 9/10 [00:03<00:00,  2.24it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.23it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.34it/s]
+10.0.0.85 - - [07/Nov/2023 13:22:53] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+10.0.0.85 - - [07/Nov/2023 13:23:02] "POST /get_cvmat_by_sam HTTP/1.1" 400 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:22:53
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253082_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253137_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253191_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253245_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253299_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253353_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253407_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253460_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253515_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132253571_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 22
+start tracking time is: 2023-11-07 13:23:24
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:23:26] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:23:26
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:23:33
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:  10%|█         | 1/10 [00:00<00:03,  2.67it/s]Tracking image:  20%|██        | 2/10 [00:00<00:03,  2.56it/s]Tracking image:  30%|███       | 3/10 [00:01<00:02,  2.52it/s]Tracking image:  40%|████      | 4/10 [00:01<00:02,  2.50it/s]Tracking image:  50%|█████     | 5/10 [00:01<00:02,  2.49it/s]Tracking image:  60%|██████    | 6/10 [00:02<00:01,  2.33it/s]Tracking image:  70%|███████   | 7/10 [00:02<00:01,  2.29it/s]Tracking image:  80%|████████  | 8/10 [00:03<00:00,  2.26it/s]Tracking image:  90%|█████████ | 9/10 [00:03<00:00,  2.24it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.23it/s]Tracking image: 100%|██████████| 10/10 [00:04<00:00,  2.33it/s]
+10.0.0.85 - - [07/Nov/2023 13:23:39] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:23:39
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339312_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339367_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339421_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339476_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339529_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339584_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339639_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339694_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339748_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132339802_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 1 tracking_frame_end is 3
+start tracking time is: 2023-11-07 13:23:54
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:23:56] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:23:56
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 7 tracking_frame_end is 17
+start tracking time is: 2023-11-07 13:24:04
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image: 0it [00:00, ?it/s]Tracking image: 0it [00:00, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:24:06] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+finish tracking time is: 2023-11-07 13:24:06
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is -1 tracking_frame_end is 3
+start tracking time is: 2023-11-07 13:24:18
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/3 [00:00<?, ?it/s]Tracking image:  33%|███▎      | 1/3 [00:00<00:00,  2.87it/s]Tracking image:  67%|██████▋   | 2/3 [00:00<00:00,  2.64it/s]Tracking image: 100%|██████████| 3/3 [00:01<00:00,  2.56it/s]Tracking image: 100%|██████████| 3/3 [00:01<00:00,  2.60it/s]
+10.0.0.85 - - [07/Nov/2023 13:24:21] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/start_tracking.py', reloading
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:24:21
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132421497_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132421552_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132421614_image.png
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-228-913
+ * Detected change in '/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/start_tracking.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-228-913
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 3
+start tracking time is: 2023-11-07 13:26:04
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/4 [00:00<?, ?it/s]Tracking image:  25%|██▌       | 1/4 [00:00<00:01,  1.57it/s]Tracking image:  50%|█████     | 2/4 [00:01<00:01,  1.85it/s]Tracking image:  75%|███████▌  | 3/4 [00:01<00:00,  2.09it/s]Tracking image: 100%|██████████| 4/4 [00:01<00:00,  2.24it/s]Tracking image: 100%|██████████| 4/4 [00:01<00:00,  2.09it/s]
+10.0.0.85 - - [07/Nov/2023 13:26:09] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:26:08
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132608817_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132608885_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132608939_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132608993_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 2 tracking_frame_end is 4
+start tracking time is: 2023-11-07 13:26:41
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/3 [00:00<?, ?it/s]Tracking image:  33%|███▎      | 1/3 [00:00<00:00,  3.23it/s]Tracking image:  67%|██████▋   | 2/3 [00:00<00:00,  2.75it/s]Tracking image: 100%|██████████| 3/3 [00:01<00:00,  2.64it/s]Tracking image: 100%|██████████| 3/3 [00:01<00:00,  2.70it/s]
+10.0.0.85 - - [07/Nov/2023 13:26:44] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:26:44
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132644605_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132644659_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132644713_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 7 tracking_frame_end is 10
+start tracking time is: 2023-11-07 13:27:15
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/4 [00:00<?, ?it/s]Tracking image:  25%|██▌       | 1/4 [00:00<00:00,  3.36it/s]Tracking image:  50%|█████     | 2/4 [00:00<00:00,  2.79it/s]Tracking image:  75%|███████▌  | 3/4 [00:01<00:00,  2.65it/s]Tracking image: 100%|██████████| 4/4 [00:01<00:00,  2.59it/s]Tracking image: 100%|██████████| 4/4 [00:01<00:00,  2.67it/s]
+10.0.0.85 - - [07/Nov/2023 13:27:18] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:27:18
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132718569_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132718626_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132718682_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132718739_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 9 tracking_frame_end is 14
+start tracking time is: 2023-11-07 13:27:30
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/6 [00:00<?, ?it/s]Tracking image:  17%|█▋        | 1/6 [00:00<00:01,  3.12it/s]Tracking image:  33%|███▎      | 2/6 [00:00<00:01,  2.73it/s]Tracking image:  50%|█████     | 3/6 [00:01<00:01,  2.61it/s]Tracking image:  67%|██████▋   | 4/6 [00:01<00:00,  2.56it/s]Tracking image:  83%|████████▎ | 5/6 [00:01<00:00,  2.54it/s]Tracking image: 100%|██████████| 6/6 [00:02<00:00,  2.36it/s]Tracking image: 100%|██████████| 6/6 [00:02<00:00,  2.49it/s]
+10.0.0.85 - - [07/Nov/2023 13:27:35] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:27:34
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132734791_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132734846_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132734900_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132734954_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132735008_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132735062_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 12 tracking_frame_end is 18
+start tracking time is: 2023-11-07 13:27:54
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/7 [00:00<?, ?it/s]Tracking image:  14%|█▍        | 1/7 [00:00<00:01,  3.14it/s]Tracking image:  29%|██▊       | 2/7 [00:00<00:01,  2.72it/s]Tracking image:  43%|████▎     | 3/7 [00:01<00:01,  2.61it/s]Tracking image:  57%|█████▋    | 4/7 [00:01<00:01,  2.56it/s]Tracking image:  71%|███████▏  | 5/7 [00:01<00:00,  2.55it/s]Tracking image:  86%|████████▌ | 6/7 [00:02<00:00,  2.37it/s]Tracking image: 100%|██████████| 7/7 [00:02<00:00,  2.32it/s]Tracking image: 100%|██████████| 7/7 [00:02<00:00,  2.45it/s]
+10.0.0.85 - - [07/Nov/2023 13:28:00] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/start_tracking.py', reloading
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:27:59
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132759811_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132759865_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132759919_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132759973_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132800028_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132800083_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107132800137_image.png
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-228-913
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 211 tracking_frame_end is 221
+start tracking time is: 2023-11-07 13:34:33
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:06,  1.56it/s]Tracking image:  18%|█▊        | 2/11 [00:01<00:04,  1.86it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:03,  2.11it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:03,  2.24it/s]Tracking image:  45%|████▌     | 5/11 [00:02<00:02,  2.33it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.24it/s]Tracking image:  64%|██████▎   | 7/11 [00:03<00:01,  2.22it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.21it/s]Tracking image:  82%|████████▏ | 9/11 [00:04<00:00,  2.21it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.21it/s]Tracking image: 100%|██████████| 11/11 [00:05<00:00,  2.09it/s]Tracking image: 100%|██████████| 11/11 [00:05<00:00,  2.14it/s]
+10.0.0.85 - - [07/Nov/2023 13:34:41] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+10.0.0.85 - - [07/Nov/2023 13:52:43] "POST /get_cvmat_by_sam HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/sam_service.py", line 43, in get_cvmat_by_sam
+    cv2.imwrite('single_channel_image.png', cv_mat)
+cv2.error: OpenCV(4.8.1) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+10.0.0.85 - - [07/Nov/2023 13:53:13] "POST /get_cvmat_by_sam HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/sam_service.py", line 43, in get_cvmat_by_sam
+    cv2.imwrite('single_channel_image.png', cv_mat)
+cv2.error: OpenCV(4.8.1) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+10.0.0.85 - - [07/Nov/2023 13:53:23] "POST /get_cvmat_by_sam HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/sam_service.py", line 43, in get_cvmat_by_sam
+    cv2.imwrite('single_channel_image.png', cv_mat)
+cv2.error: OpenCV(4.8.1) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+10.0.0.85 - - [07/Nov/2023 13:53:25] "POST /get_cvmat_by_sam HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/sam_service.py", line 43, in get_cvmat_by_sam
+    cv2.imwrite('single_channel_image.png', cv_mat)
+cv2.error: OpenCV(4.8.1) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - img is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'img'
+
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:34:41
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441085_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441159_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441216_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441273_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441330_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441386_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441443_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441499_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441555_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441612_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107133441669_image.png
+cv_mat is 
+tracking_frame_start is -1 tracking_frame_end is 9
+cv_mat is 
+tracking_frame_start is -1 tracking_frame_end is 9
+cv_mat is 
+tracking_frame_start is 12 tracking_frame_end is 22
+cv_mat is 
+tracking_frame_start is 12 tracking_frame_end is 22
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is -1
+start tracking time is: 2023-11-07 13:53:53
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/1 [00:00<?, ?it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  3.62it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s]
+10.0.0.85 - - [07/Nov/2023 13:53:55] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:53:55
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107135355555_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is -1 tracking_frame_end is -1
+start tracking time is: 2023-11-07 13:54:01
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/1 [00:00<?, ?it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.82it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.82it/s]
+10.0.0.85 - - [07/Nov/2023 13:54:03] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 13:54:03
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107135403570_image.png
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is -1 tracking_frame_end is 9
+start tracking time is: 2023-11-07 13:54:27
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]Tracking image:   0%|          | 0/10 [00:00<?, ?it/s]
+10.0.0.85 - - [07/Nov/2023 13:54:29] "POST /get_cvmat_by_sam HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/sam_service.py", line 49, in get_cvmat_by_sam
+    masks, logits, painted_images = start_tracking(source, topic, cv_mat, cv_mat, int(tracking_frame_start)-1,
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/start_tracking.py", line 104, in start_tracking
+    mask, logit, painted_image = xmem.track(following_frames[i], template_mask)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/tracker/base_tracker.py", line 82, in track
+    probs, _ = self.tracker.step(frame_tensor, mask, labels)   # logits 2 (bg fg) H W
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/tracker/inference/inference_core.py", line 102, in step
+    value, hidden = self.network.encode_value(image, f16, self.memory.get_hidden(),
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/tracker/model/network.py", line 83, in encode_value
+    g16, h16 = self.value_encoder(frame, image_feat_f16, h16, masks, others, is_deep_update)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/tracker/model/modules.py", line 130, in forward
+    g = self.distributor(image, g)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/tracker/model/group_modules.py", line 76, in forward
+    g = torch.cat([x.unsqueeze(1).expand(-1,num_objects,-1,-1,-1), g], 2)
+RuntimeError: Sizes of tensors must match except in dimension 2. Expected size 1088 but got size 368 for tensor number 1 in the list.
+(1080, 1920, 3) (360, 960)
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 15:24:04
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:03,  2.74it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.59it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:03,  2.56it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.53it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.51it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.34it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.30it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.27it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.26it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.11it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.30it/s]
+10.0.0.227 - - [07/Nov/2023 15:24:12] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 15:24:11
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152411991_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412044_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412102_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412157_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412212_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412267_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412322_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412377_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412432_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412487_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152412542_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 0
+start tracking time is: 2023-11-07 15:24:14
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/1 [00:00<?, ?it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  3.49it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s]
+10.0.0.227 - - [07/Nov/2023 15:24:16] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 15:24:16
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152416341_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 0
+start tracking time is: 2023-11-07 15:24:25
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/1 [00:00<?, ?it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+10.0.0.227 - - [07/Nov/2023 15:24:27] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 15:24:27
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107152427513_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 1
+start tracking time is: 2023-11-07 20:00:05
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/2 [00:00<?, ?it/s]Tracking image:  50%|█████     | 1/2 [00:00<00:00,  2.65it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.56it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.57it/s]
+10.0.0.227 - - [07/Nov/2023 20:00:08] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 20:00:08
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200008521_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200008577_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-07 20:00:24
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:03,  2.87it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.63it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:03,  2.57it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.55it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.53it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.35it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.30it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.27it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.25it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.30it/s]
+10.0.0.227 - - [07/Nov/2023 20:00:31] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-07 20:00:31
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031254_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031309_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031363_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031418_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031474_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031528_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031588_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031642_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031698_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031752_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231107200031807_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 1
+start tracking time is: 2023-11-08 00:36:47
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/2 [00:00<?, ?it/s]Tracking image:  50%|█████     | 1/2 [00:00<00:00,  3.55it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.85it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.93it/s]
+10.0.0.227 - - [08/Nov/2023 00:36:50] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:36:49
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003649950_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003650002_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 0
+start tracking time is: 2023-11-08 00:36:55
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/1 [00:00<?, ?it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s]Tracking image: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s]
+10.0.0.227 - - [08/Nov/2023 00:36:57] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:36:57
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003657787_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 1
+start tracking time is: 2023-11-08 00:37:05
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/2 [00:00<?, ?it/s]Tracking image:  50%|█████     | 1/2 [00:00<00:00,  2.99it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.67it/s]Tracking image: 100%|██████████| 2/2 [00:00<00:00,  2.72it/s]
+10.0.0.227 - - [08/Nov/2023 00:37:08] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:37:08
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003708270_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003708324_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-08 00:37:19
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:03,  3.25it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.76it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:03,  2.63it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.58it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.55it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.36it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.31it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.28it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.25it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.32it/s]
+10.0.0.227 - - [08/Nov/2023 00:37:26] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:37:25
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003725939_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003725993_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726045_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726097_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726149_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726201_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726255_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726308_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726360_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726413_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003726466_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 6 tracking_frame_end is 16
+start tracking time is: 2023-11-08 00:38:11
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.63it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.87it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.69it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.62it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.58it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.39it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.34it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.30it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.27it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.25it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.13it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.35it/s]
+10.0.0.227 - - [08/Nov/2023 00:38:19] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:38:18
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003818774_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003818827_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003818880_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003818932_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003818985_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819038_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819093_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819145_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819198_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819252_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003819306_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 14 tracking_frame_end is 24
+start tracking time is: 2023-11-08 00:38:57
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.62it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.88it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.70it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.62it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.58it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.39it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.33it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.29it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.27it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.25it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.35it/s]
+10.0.0.227 - - [08/Nov/2023 00:39:05] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:39:04
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904708_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904761_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904814_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904868_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904924_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003904977_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003905030_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003905083_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003905136_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003905189_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003905242_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 16 tracking_frame_end is 26
+start tracking time is: 2023-11-08 00:39:45
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.46it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.77it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:03,  2.61it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.54it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.51it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.34it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.27it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.23it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.21it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.20it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.08it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.29it/s]
+10.0.0.227 - - [08/Nov/2023 00:39:53] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:39:52
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003952773_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003952833_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003952891_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003952949_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953007_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953068_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953125_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953183_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953241_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953299_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108003953356_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 22 tracking_frame_end is 32
+start tracking time is: 2023-11-08 00:44:24
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.62it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.88it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.71it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.63it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.58it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.39it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.34it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.30it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.28it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.25it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.35it/s]
+10.0.0.227 - - [08/Nov/2023 00:44:31] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:44:30
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004430997_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431052_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431105_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431158_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431213_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431287_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431342_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431395_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431449_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431502_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108004431556_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 0 tracking_frame_end is 10
+start tracking time is: 2023-11-08 00:52:50
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.62it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.85it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.67it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.60it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.57it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.38it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.32it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.28it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.26it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.24it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.11it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.34it/s]
+10.0.0.227 - - [08/Nov/2023 00:52:57] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:52:57
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257025_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257077_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257130_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257183_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257236_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257289_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257342_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257395_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257448_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257502_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005257555_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 10 tracking_frame_end is 20
+start tracking time is: 2023-11-08 00:53:52
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.63it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.88it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.70it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.62it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.57it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.37it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.32it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.29it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.26it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.25it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.34it/s]
+10.0.0.227 - - [08/Nov/2023 00:54:00] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:53:59
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359580_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359632_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359684_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359736_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359788_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359840_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359893_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359945_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005359997_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005400050_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005400111_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 20 tracking_frame_end is 30
+start tracking time is: 2023-11-08 00:54:19
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.60it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.86it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.68it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.60it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.57it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.38it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.32it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.28it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.26it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.25it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.12it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.34it/s]
+10.0.0.227 - - [08/Nov/2023 00:54:26] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
+(1080, 1920, 3) (1080, 1920)
+finish tracking time is: 2023-11-08 00:54:26
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426290_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426342_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426395_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426447_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426500_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426553_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426605_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426658_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426711_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426764_image.png
+frame_array is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+image_path is /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/20231108005426816_image.png
+get cv_mat from client is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+cv_mat is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+tracking_frame_start is 37 tracking_frame_end is 47
+start tracking time is: 2023-11-08 00:54:57
+Hyperparameters read from the model weights: C^k=64, C^v=512, C^h=64
+Single object mode: False
+start
+Tracking image:   0%|          | 0/11 [00:00<?, ?it/s]Tracking image:   9%|▉         | 1/11 [00:00<00:02,  3.52it/s]Tracking image:  18%|█▊        | 2/11 [00:00<00:03,  2.85it/s]Tracking image:  27%|██▋       | 3/11 [00:01<00:02,  2.69it/s]Tracking image:  36%|███▋      | 4/11 [00:01<00:02,  2.62it/s]Tracking image:  45%|████▌     | 5/11 [00:01<00:02,  2.58it/s]Tracking image:  55%|█████▍    | 6/11 [00:02<00:02,  2.39it/s]Tracking image:  64%|██████▎   | 7/11 [00:02<00:01,  2.33it/s]Tracking image:  73%|███████▎  | 8/11 [00:03<00:01,  2.30it/s]Tracking image:  82%|████████▏ | 9/11 [00:03<00:00,  2.28it/s]Tracking image:  91%|█████████ | 10/11 [00:04<00:00,  2.26it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.13it/s]Tracking image: 100%|██████████| 11/11 [00:04<00:00,  2.35it/s]
+10.0.0.227 - - [08/Nov/2023 00:55:04] "POST /get_cvmat_by_sam HTTP/1.1" 200 -
