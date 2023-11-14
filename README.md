@@ -103,8 +103,10 @@ The project is based on [Segment Anything](https://github.com/facebookresearch/s
 ## From python virtual environment
 ```
 source /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/bin/activate
-python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0
-python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0 --topic "CAM_FRONT" --frame_end_id 10
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 568 --topic "CAM_FRONT" --frame_end_id 10
+
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/denso_tri52_seg_pre_labeling.bag" --frame_start_id 808 
+
 
 python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 0 --mask test_sample/frame1_mask.npy --topic "CAM_FRONT" --frame_end_id 10 --mask_save_path "./masks_result.npy"
 
@@ -127,3 +129,7 @@ sudo docker run \
 
 
 ```
+
+# Error:
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+`sudo apt-get install ffmpeg `

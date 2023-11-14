@@ -14,5 +14,5 @@ av
 openmim
 tqdm
 psutil
-requests
 rosbags
+flask

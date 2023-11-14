@@ -167,6 +167,8 @@ def sam_refine(video_state, point_prompt, click_state, interactive_state, evt:gr
         point_prompt: flag for positive or negative button click
         click_state: [[points], [labels]]
     """
+    print(video_state["origin_images"][0].shape)
+    start_time = time.time()
     if point_prompt == "Positive":
         coordinate = "[[{},{},1]]".format(evt.index[0], evt.index[1])
         interactive_state["positive_click_times"] += 1
@@ -174,22 +176,32 @@ def sam_refine(video_state, point_prompt, click_state, interactive_state, evt:gr
         coordinate = "[[{},{},0]]".format(evt.index[0], evt.index[1])
         interactive_state["negative_click_times"] += 1
     
+    start_time2 = time.time()
+    print("prepare time (seconds)", start_time2-start_time)
     # prompt for sam model
     model.samcontroler.sam_controler.reset_image()
     model.samcontroler.sam_controler.set_image(video_state["origin_images"][video_state["select_frame_number"]])
-    prompt = get_prompt(click_state=click_state, click_input=coordinate)
-
+    start_time3 = time.time()
+    print("set image time (seconds)", start_time3-start_time2)
+    prompt = get_prompt(click_state=click_state, click_input=coordinate)  
+    # {'prompt_type': ['click'], 'input_point': [[302, 143], [309, 177], [377, 199]], 'input_label': [1, 1, 0], 'multimask_output': 'True'}
+    
+    
     mask, logit, painted_image = model.first_frame_click( 
                                                       image=video_state["origin_images"][video_state["select_frame_number"]], 
                                                       points=np.array(prompt["input_point"]),
                                                       labels=np.array(prompt["input_label"]),
                                                       multimask=prompt["multimask_output"],
                                                       )
+    print("Running model time (seconds)", time.time()-start_time3)
+    
     video_state["masks"][video_state["select_frame_number"]] = mask
     video_state["logits"][video_state["select_frame_number"]] = logit
     video_state["painted_images"][video_state["select_frame_number"]] = painted_image
-
+    
     operation_log = [("",""), ("Use SAM for segment. You can try add positive and negative points by clicking. Or press Clear clicks button to refresh the image. Press Add mask button when you are satisfied with the segment","Normal")]
+    
+
     return painted_image, video_state, interactive_state, operation_log
 
 def add_multi_mask(video_state, interactive_state, mask_dropdown):
@@ -382,6 +394,7 @@ SAM_checkpoint_url_dict = {
     'vit_l': "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth",
     'vit_b': "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth"
 }
+print(args.sam_model_type)
 sam_checkpoint = SAM_checkpoint_dict[args.sam_model_type] 
 sam_checkpoint_url = SAM_checkpoint_url_dict[args.sam_model_type] 
 xmem_checkpoint = "XMem-s012.pth"
@@ -395,7 +408,7 @@ SAM_checkpoint = download_checkpoint(sam_checkpoint_url, folder, sam_checkpoint)
 xmem_checkpoint = download_checkpoint(xmem_checkpoint_url, folder, xmem_checkpoint)
 e2fgvi_checkpoint = download_checkpoint_from_google_drive(e2fgvi_checkpoint_id, folder, e2fgvi_checkpoint)
 args.port = 12212
-args.device = "cuda:0"
+# args.device = "cuda:0"
 # args.mask_save = True
 
 # initialize sam, xmem, e2fgvi models
@@ -506,13 +519,14 @@ with gr.Blocks() as iface:
     resize_ratio_slider.release(fn=get_resize_ratio, 
                                    inputs=[resize_ratio_slider, interactive_state], 
                                    outputs=[interactive_state], api_name="resize_ratio")
-    
+
     # click select image to get mask using sam
     template_frame.select(
         fn=sam_refine,
         inputs=[video_state, point_prompt, click_state, interactive_state],
         outputs=[template_frame, video_state, interactive_state, run_status]
     )
+    
 
     # add different mask
     Add_mask_button.click(

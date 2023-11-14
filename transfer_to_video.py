@@ -7,9 +7,9 @@ import glob
 import os
 
 
-def get_reshape_size(org_x,org_y):
-    reshape_x = int(org_x /2)
-    reshape_y = int(org_y/2)
+def get_reshape_size(org_x,org_y, ratio=1):
+    reshape_x = int(org_x*ratio)
+    reshape_y = int(org_y*ratio)
     return reshape_x, reshape_y
 
 def images_to_video(image_folder, video_path, fps):
@@ -24,7 +24,7 @@ def images_to_video(image_folder, video_path, fps):
     # Read the first image to get the width and height
     img = cv2.imread(images[0])
     height, width, layers = img.shape
-
+    print(height, width)
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     reshape_x, reshape_y = get_reshape_size(width, height)
@@ -43,17 +43,15 @@ def images_to_video(image_folder, video_path, fps):
     video.release()
     print("Video created successfully!")
 
-def image_process(bag_path="test_sample/Compass_2D_demo_allTopic_with_sam.bag"):
+def image_process(bag_path="test_sample/denso_tri52_seg_pre_labeling.bag"):
     print("start")
-    img_topic = "CAM_FRONT"
+    img_topic = "/tri_52"
     # Initialize CvBridge
     bridge = CvBridge()
     count = 0
     with rosbag.Bag(bag_path, mode='r') as bag:
        
         for topic, msg, t in bag.read_messages(topics= [img_topic]):
-            print("bag")
-
             # Convert compressed image message to CV image
             img_msg = Image()
             img_msg.data = msg.compressed_data
@@ -62,6 +60,7 @@ def image_process(bag_path="test_sample/Compass_2D_demo_allTopic_with_sam.bag"):
             cv_image = bridge.compressed_imgmsg_to_cv2(
                 img_msg, "passthrough")            
             (org_y, org_x, z) = cv_image.shape
+            
             reshape_x, reshape_y = get_reshape_size(
                         org_x, org_y)            
             new_cv_image = cv2.resize(cv_image, (reshape_x, reshape_y))
@@ -73,4 +72,4 @@ def image_process(bag_path="test_sample/Compass_2D_demo_allTopic_with_sam.bag"):
 
 if __name__ == '__main__':
     # image_process()
-    images_to_video('test_sample/tri_52_jpeg', 'denso_middle.mp4', 10)
+    images_to_video('out/', 'denso_middle.mp4', 10)

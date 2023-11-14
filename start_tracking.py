@@ -128,13 +128,13 @@ if __name__ == "__main__" :
     parser.add_argument("--frame_start_id", type=int, required=True, help="Frame ID for tracking.")
     parser.add_argument("--mask", type=str, required=False, help="Path to the mask file.")
     parser.add_argument("--topic", type=str, required=False, default="/tri_52", help="Image topic for tracking.")
-    parser.add_argument("--frame_end_id", type=str, required=False, default=10, help="Frame End ID for tracking.")
+    parser.add_argument("--frame_end_id", type=str, required=False, default="None", help="Frame End ID for tracking.")
     parser.add_argument("--mask_save_path", type=str, required=False, default="./masks_result.npy", help="mask_save_path")
     # Parse the arguments
     args = parser.parse_args()
 
     if not args.mask:
-        template_mask = load_data("cv_mat.npy")
+        template_mask = load_data("masks_result.npy")
         template_mask[template_mask == 100] = 79
     else:
         template_mask = load_data(args.mask)
@@ -147,7 +147,8 @@ if __name__ == "__main__" :
     else:
         args.frame_end_id = None
         print("frame_end_id {} is not a number, set to None".format(args.frame_end_id))
-    
+
+    print(args.path,  args.topic, template_mask, template_mask, args.frame_start_id, args.frame_end_id)
     masks, logits, painted_images = start_tracking(args.path,  args.topic, template_mask, template_mask, frame_start_id = args.frame_start_id, frame_end_id=args.frame_end_id)
     if args.mask_save_path.endswith(".npy"):       
         save_data(args.mask_save_path, template_mask)
