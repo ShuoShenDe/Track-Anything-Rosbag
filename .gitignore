@@ -18,3 +18,4 @@ trackanythingenv/
 build.log
 *.npy
 trackanything2.7/
+output_file.prof
