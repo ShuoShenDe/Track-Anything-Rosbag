@@ -54,6 +54,7 @@ class InferenceCore:
         ) and (not end)
         is_normal_update = (not self.deep_update_sync or not is_deep_update) and (not end)
 
+        # save
         key, shrinkage, selection, f16, f8, f4 = self.network.encode_key(image, 
                                                     need_ek=(self.enable_long_term or need_segment), 
                                                     need_sk=is_mem_frame)
@@ -62,7 +63,7 @@ class InferenceCore:
         # segment the current frame is needed
         if need_segment:
             memory_readout = self.memory.match_memory(key, selection).unsqueeze(0)
-            
+            # save
             hidden, pred_logits_with_bg, pred_prob_with_bg = self.network.segment(multi_scale_features, memory_readout, 
                                     self.memory.get_hidden(), h_out=is_normal_update, strip_bg=False)
             # remove batch dim

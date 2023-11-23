@@ -69,8 +69,9 @@ RUN apt-get update && \
 
 # 复制文件到容器中
 COPY . .
+RUN chmod +x /workspace/start_script.sh
 
 # 设置当启动容器时运行的命令
-#ENTRYPOINT ["/workspace/start_script.sh"]
+ENTRYPOINT ["/workspace/start_script.sh"]
 #CMD ["--path", "/workspace/shared_data/Compass_2D_demo_allTopic_with_sam.bag", "--frame_start_id", "0", "--mask", "/workspace/shared_data/frame1_mask.npy", "--frame_end_id", "None", "--mask_save_path", "/workspace/shared_data/masks_result.npy", "--topic", "CAM_FRONT"]
-CMD ["sh", "-c", "python sam_service.py"]
+#CMD ["sh", "-c", "python sam_service.py"]

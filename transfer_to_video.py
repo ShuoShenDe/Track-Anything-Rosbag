@@ -43,9 +43,9 @@ def images_to_video(image_folder, video_path, fps):
     video.release()
     print("Video created successfully!")
 
-def image_process(bag_path="test_sample/denso_tri52_seg_pre_labeling.bag"):
+def image_process(bag_path="test_sample/Compass_2D_demo_allTopic_with_sam.bag"):
     print("start")
-    img_topic = "/tri_52"
+    img_topic = "CAM_FRONT"
     # Initialize CvBridge
     bridge = CvBridge()
     count = 0
@@ -71,5 +71,5 @@ def image_process(bag_path="test_sample/denso_tri52_seg_pre_labeling.bag"):
 
 
 if __name__ == '__main__':
-    # image_process()
-    images_to_video('out/', 'denso_middle.mp4', 10)
+    image_process()
+    # images_to_video('out/', 'denso_middle.mp4', 10)

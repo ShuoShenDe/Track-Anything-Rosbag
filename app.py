@@ -167,8 +167,6 @@ def sam_refine(video_state, point_prompt, click_state, interactive_state, evt:gr
         point_prompt: flag for positive or negative button click
         click_state: [[points], [labels]]
     """
-    print(video_state["origin_images"][0].shape)
-    start_time = time.time()
     if point_prompt == "Positive":
         coordinate = "[[{},{},1]]".format(evt.index[0], evt.index[1])
         interactive_state["positive_click_times"] += 1
@@ -176,13 +174,10 @@ def sam_refine(video_state, point_prompt, click_state, interactive_state, evt:gr
         coordinate = "[[{},{},0]]".format(evt.index[0], evt.index[1])
         interactive_state["negative_click_times"] += 1
     
-    start_time2 = time.time()
-    print("prepare time (seconds)", start_time2-start_time)
     # prompt for sam model
     model.samcontroler.sam_controler.reset_image()
     model.samcontroler.sam_controler.set_image(video_state["origin_images"][video_state["select_frame_number"]])
     start_time3 = time.time()
-    print("set image time (seconds)", start_time3-start_time2)
     prompt = get_prompt(click_state=click_state, click_input=coordinate)  
     # {'prompt_type': ['click'], 'input_point': [[302, 143], [309, 177], [377, 199]], 'input_label': [1, 1, 0], 'multimask_output': 'True'}
     
@@ -271,21 +266,20 @@ def vos_tracking_video(video_state, interactive_state, mask_dropdown):
         operation_log = [("Error! Please add at least one mask to track by clicking the left image.","Error"), ("","")]
         # return video_output, video_state, interactive_state, operation_error
     # print("template_mask: ", (template_mask), len(template_mask[0]))  # 540 960  
-    row_num = 0
     # for row in template_mask:
     #     if any(item != 0 for item in row):
     #         print(set(row))
     #         print("row num", row_num)
     #     row_num+=1
-    save_data(template_mask, "frame1_mask.npy")
-    print(type(template_mask))
-    print(type(following_frames))
-    print(type(following_frames[0]))
 
     # print("following_frames: ",len(following_frames), len(following_frames[0]), len(following_frames[0][0]), len(following_frames[0][0][0]))  # 201 rest frame number 540, 960, 3
+    # start_time = time.time()
+    
+    # print("start time: ", start_time)
+    
     masks, logits, painted_images = model.generator(images=following_frames, template_mask=template_mask)
+    # print("end time: ", time.time() - start_time)
     # clear GPU memory
-    print(len(masks), len(masks[0]), len(masks[0][0]))
     model.xmem.clear_memory()
 
     if interactive_state["track_end_number"]: 

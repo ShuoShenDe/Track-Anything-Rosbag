@@ -1,3 +1,4 @@
+import time
 import PIL
 from tqdm import tqdm
 
@@ -45,17 +46,19 @@ class TrackingAnything():
         logits = []
         painted_images = []
         for i in tqdm(range(len(images)), desc="Tracking image"):
-            if i ==0:           
+            start_track_time = time.time()
+            if i ==0:
                 mask, logit, painted_image = self.xmem.track(images[i], template_mask)
                 masks.append(mask)
                 logits.append(logit)
                 painted_images.append(painted_image)
-                
+                # print("first frame generator time: ", time.time()-start_track_time)
             else:
                 mask, logit, painted_image = self.xmem.track(images[i])
                 masks.append(mask)
                 logits.append(logit)
                 painted_images.append(painted_image)
+                # print("generator time: ", time.time()-start_track_time)
         return masks, logits, painted_images
     
         

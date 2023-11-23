@@ -156,4 +156,4 @@ if __name__ == "__main__" :
         raise Exception("mask_save_path need end with .npy")
     
     row_num = 0
-    print(len(masks), masks[0].shape)
+    # print(len(masks), masks[0].shape)

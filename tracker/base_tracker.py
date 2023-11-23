@@ -1,6 +1,7 @@
 # import for debugging
 import os
 import glob
+import time
 import numpy as np
 from PIL import Image
 # import for base_tracker
@@ -67,7 +68,7 @@ class BaseTracker:
         logit: numpy arrays, probability map (H, W)
         painted_image: numpy array (H, W, 3)
         """
-
+        # start_track = time.time()
         if first_frame_annotation is not None:   # first frame mask
             # initialisation
             mask, labels = self.mapper.convert_mask(first_frame_annotation)
@@ -79,7 +80,9 @@ class BaseTracker:
         # prepare inputs
         frame_tensor = self.im_transform(frame).to(self.device)
         # track one frame
+        # print("track preparing time: ", time.time()-start_track)
         probs, _ = self.tracker.step(frame_tensor, mask, labels)   # logits 2 (bg fg) H W
+        # print("track calculating time: ", time.time()-start_track)
         # # refine
         # if first_frame_annotation is None:
         #     out_mask = self.sam_refinement(frame, logits[1], ti)    
@@ -102,7 +105,7 @@ class BaseTracker:
             painted_image = mask_painter(painted_image, (final_mask==obj).astype('uint8'), mask_color=obj+1)
 
         # print(f'max memory allocated: {torch.cuda.max_memory_allocated()/(2**20)} MB')
-
+        # print("track time: ", time.time()-start_track)
         return final_mask, final_mask, painted_image
 
     @torch.no_grad()
