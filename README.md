@@ -103,7 +103,7 @@ The project is based on [Segment Anything](https://github.com/facebookresearch/s
 ## From python virtual environment
 ```
 source /home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/trackanythingenv/bin/activate
-python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 568 --topic "CAM_FRONT" --frame_end_id 10
+python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/Compass_2D_demo_allTopic_with_sam.bag" --frame_start_id 568 --topic "CAM_FRONT" --frame_end_id 100
 
 python start_tracking.py --path "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/denso_tri52_seg_pre_labeling.bag" --frame_start_id 808 
 

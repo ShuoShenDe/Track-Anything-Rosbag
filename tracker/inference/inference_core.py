@@ -1,3 +1,4 @@
+import time
 from inference.memory_manager import MemoryManager
 from model.network import XMem
 from model.aggregate import aggregate
@@ -42,6 +43,7 @@ class InferenceCore:
     def step(self, image, mask=None, valid_labels=None, end=False):
         # image: 3*H*W
         # mask: num_objects*H*W or None
+        start_track = time.time()
         self.curr_ti += 1
         image, self.pad = pad_divide_by(image, 16)
         image = image.unsqueeze(0) # add the batch dimension
@@ -59,7 +61,7 @@ class InferenceCore:
                                                     need_ek=(self.enable_long_term or need_segment), 
                                                     need_sk=is_mem_frame)
         multi_scale_features = (f16, f8, f4)
-
+        print("encode_key time: ", time.time()-start_track)
         # segment the current frame is needed
         if need_segment:
             memory_readout = self.memory.match_memory(key, selection).unsqueeze(0)
@@ -78,6 +80,7 @@ class InferenceCore:
         else:
             pred_prob_no_bg = pred_prob_with_bg = pred_logits_with_bg = pred_logits_no_bg = None
 
+        print("segment time: ", time.time()-start_track)
         # use the input mask if any
         if mask is not None:
             mask, _ = pad_divide_by(mask, 16)

@@ -11,19 +11,16 @@ import datetime
 app = Flask(__name__)
 
 
-def load_data(filename):
-    return np.load(filename)
-
-
 @app.route('/get_cvmat_by_sam', methods=['POST'])
 def get_cvmat_by_sam():
     json_data = request.get_json()
     if 'cv_mat' not in json_data:
         return jsonify({'error': 'Missing required parameters cv_mat, pls check'}), 400
+    if 'source' not in json_data:
+        return jsonify({'error': 'Missing required parameters source, pls check'}), 400
     source = json_data.get('source', "denso_tri52_seg_pre_labeling.bag")
-    topic = json_data.get('topic', "/tri_52")
-    cv_mat = json_data.get('cv_mat', load_data(
-        "/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample/frame1_mask.npy"))
+    topic = json_data.get('topic', None)
+    cv_mat = json_data.get('cv_mat')
 
     # transfer json to numpy
     if json_data.get('cv_mat'):
@@ -47,7 +44,7 @@ def get_cvmat_by_sam():
     print("source:{} start tracking time is: {}".format(source, formatted_time))
     source_path = os.path.join("/home/ubuntu/Documents/EFS/Personal/ShuoShen/Track-Anything-Rosbag/test_sample", source)
 
-    masks, logits, painted_images = start_tracking(source_path, topic, cv_mat, cv_mat, int(tracking_frame_start) - 1,
+    masks, logits, painted_images = start_tracking(source_path, topic, cv_mat, int(tracking_frame_start) - 1,
                                                    int(tracking_frame_end) - 1)
 
     current_time = datetime.datetime.now()

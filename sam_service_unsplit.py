@@ -46,7 +46,7 @@ def get_cvmat_by_sam():
     formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
     print("start tracking time is: {}".format(formatted_time))
 
-    masks, logits, painted_images = start_tracking(source, topic, cv_mat, cv_mat, int(tracking_frame_start)-1,
+    masks, logits, painted_images = start_tracking(source, topic, cv_mat, int(tracking_frame_start)-1,
                                                    int(tracking_frame_end)-1)
 
     current_time = datetime.datetime.now()

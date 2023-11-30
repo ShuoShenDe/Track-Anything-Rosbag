@@ -33,16 +33,17 @@ def get_reshape_size(org_x,org_y, ratio=1):
     return reshape_x, reshape_y
 
 def image_process(bag_path,  img_topic,  frame_start_id=0, frame_end_id=None):
-    print("start")
+    print("start",img_topic)
     if frame_end_id == None:
         frame_end_id = float('inf')
     images = []
     with AnyReader([Path(bag_path)]) as reader:
-        connections = [x for x in reader.connections if x.topic == img_topic]
+        if img_topic == None:
+            connections = [x for x in reader.connections if "/ld_image" in x.msgtype]
+        else:
+            connections = [x for x in reader.connections if x.topic == img_topic]        
         count = 0
-        for connection, timestamp, rawdata in reader.messages(connections=connections): 
-            # print(connection.msgcount)
-            # print(count)
+        for connection, timestamp, rawdata in reader.messages(connections=connections):
             if count >= frame_start_id:
                 msg = reader.deserialize(rawdata, connection.msgtype)
                 # print(msg.header)
@@ -84,7 +85,9 @@ def prepare_checkpoint(xmem_checkpoint_url = "https://github.com/hkchengrex/XMem
     xmem_checkpoint = download_checkpoint(xmem_checkpoint_url, folder, xmem_checkpoint)
     return xmem_checkpoint
 
-def start_tracking(source_name, img_topic, mask,  template_mask, frame_start_id=0, frame_end_id=None, device = "cuda:0"):
+
+def start_tracking(source_name, img_topic, template_mask, frame_start_id=0, frame_end_id=None, device = "cuda:0"):
+        
     xmem_checkpoint = prepare_checkpoint()
     xmem = BaseTracker(xmem_checkpoint, device=device)
     xmem.clear_memory()
@@ -100,7 +103,6 @@ def start_tracking(source_name, img_topic, mask,  template_mask, frame_start_id=
     following_frames = image_process(source_name, img_topic = img_topic,  frame_start_id = frame_start_id, frame_end_id=frame_end_id)
     for i in tqdm(range(len(following_frames)), desc="Tracking image"):
         if i ==0: 
-            print(following_frames[i].shape, template_mask.shape)
             mask, logit, painted_image = xmem.track(following_frames[i], template_mask)
             masks.append(mask)
             logits.append(logit)
@@ -127,7 +129,7 @@ if __name__ == "__main__" :
     parser.add_argument("--path", type=str, required=True, help="Path to the bag file.")  # "/home/qing/Documents/ShuoShen/Track-Anything/test_sample/Compass_2D_demo_allTopic_with_sam.bag"
     parser.add_argument("--frame_start_id", type=int, required=True, help="Frame ID for tracking.")
     parser.add_argument("--mask", type=str, required=False, help="Path to the mask file.")
-    parser.add_argument("--topic", type=str, required=False, default="/tri_52", help="Image topic for tracking.")
+    parser.add_argument("--topic", type=str, required=False, default=None, help="Image topic for tracking.")
     parser.add_argument("--frame_end_id", type=str, required=False, default="None", help="Frame End ID for tracking.")
     parser.add_argument("--mask_save_path", type=str, required=False, default="./masks_result.npy", help="mask_save_path")
     # Parse the arguments
@@ -148,8 +150,8 @@ if __name__ == "__main__" :
         args.frame_end_id = None
         print("frame_end_id {} is not a number, set to None".format(args.frame_end_id))
 
-    print(args.path,  args.topic, template_mask, template_mask, args.frame_start_id, args.frame_end_id)
-    masks, logits, painted_images = start_tracking(args.path,  args.topic, template_mask, template_mask, frame_start_id = args.frame_start_id, frame_end_id=args.frame_end_id)
+    print(args.path,  args.topic, template_mask, args.frame_start_id, args.frame_end_id)
+    masks, logits, painted_images = start_tracking(args.path,  args.topic, template_mask, frame_start_id = args.frame_start_id, frame_end_id=args.frame_end_id)
     if args.mask_save_path.endswith(".npy"):       
         save_data(args.mask_save_path, template_mask)
     else:

@@ -68,7 +68,7 @@ class BaseTracker:
         logit: numpy arrays, probability map (H, W)
         painted_image: numpy array (H, W, 3)
         """
-        # start_track = time.time()
+        
         if first_frame_annotation is not None:   # first frame mask
             # initialisation
             mask, labels = self.mapper.convert_mask(first_frame_annotation)

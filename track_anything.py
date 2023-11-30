@@ -46,7 +46,7 @@ class TrackingAnything():
         logits = []
         painted_images = []
         for i in tqdm(range(len(images)), desc="Tracking image"):
-            start_track_time = time.time()
+            # start_track_time = time.time()
             if i ==0:
                 mask, logit, painted_image = self.xmem.track(images[i], template_mask)
                 masks.append(mask)
